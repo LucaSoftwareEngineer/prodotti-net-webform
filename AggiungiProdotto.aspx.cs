@@ -10,9 +10,14 @@ namespace WebForm1App
 {
     public partial class AggiungiProdotto : System.Web.UI.Page
     {
+        private const string V = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] == null || Session["user"] == "")
+            {
+                Response.Redirect("Default.aspx");
+            }
         }
 
         protected void salva_Click(object sender, EventArgs e)

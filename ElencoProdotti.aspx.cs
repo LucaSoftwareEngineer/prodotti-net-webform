@@ -11,6 +11,12 @@ namespace WebForm1App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["user"] == null || Session["user"] == "")
+            {
+                Response.Redirect("Default.aspx");
+            }
+
             using (var db = new AppDbContext()) {
                 var elenco = db.Prodotti.OrderBy(p => p.Titolo).ToList();
                 GridViewProdotti.DataSource = elenco;
