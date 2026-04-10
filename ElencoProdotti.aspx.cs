@@ -17,5 +17,12 @@ namespace WebForm1App
                 GridViewProdotti.DataBind();
             }
         }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            var _default = new _Default();
+            _default.Logout();
+            Response.Redirect("Default.aspx");
+        }
     }
 }

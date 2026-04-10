@@ -18,11 +18,18 @@
         <asp:Button ID="salva" runat="server" Text="Salva" OnClick="salva_Click" />
         <br />
         <asp:Label ID="lbl_esito_operazione" runat="server" Text=""></asp:Label>
+
+        <br />
+        <br />
+
+        <a href="ElencoProdotti.aspx">Elenco prodotti</a>
+
+        <br />
+        <br />
+
+        <asp:Button ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click" />
+
     </form>
 
-    <br />
-    <br />
-
-    <a href="ElencoProdotti.aspx">Elenco prodotti</a>
 </body>
 </html>

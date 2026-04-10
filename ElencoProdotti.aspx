@@ -17,6 +17,12 @@
         <br />
 
         <a href="AggiungiProdotto.aspx">Aggiungi prodotto</a>
+        
+        <br />
+        <br />
+
+        <asp:Button ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click" />
+
     </form>
 </body>
 </html>
