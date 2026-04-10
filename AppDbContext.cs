@@ -15,5 +15,6 @@ namespace WebForm1App
         }
 
         public DbSet<Prodotto> Prodotti { get; set; }
+        public DbSet<Manager> Managers { get; set; }
     }
 }
