@@ -9,6 +9,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+        Cerca: <asp:TextBox ID="CercaInput" runat="server"></asp:TextBox> 
+        &nbsp; <asp:Button ID="CercaButton" runat="server" Text="Cerca" OnClick="CercaButton_Click" />
+        &nbsp; <asp:Button ID="AnnullaRicercaButton" runat="server" Text="Annulla" OnClick="AnnullaRicercaButton_Click" />
+        <br />
+        <br />
+
         Elenco prodotti:
         <br />
         <asp:GridView ID="GridViewProdotti" runat="server" AutoGenerateColumns="true" ></asp:GridView>
