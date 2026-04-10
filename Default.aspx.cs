@@ -16,26 +16,5 @@ namespace WebForm1App
 
         }
 
-        protected void salva_Click(object sender, EventArgs e)
-        {
-            var nuovoProdotto = new Prodotto() {
-                Titolo = titolo.Text,
-                Prezzo = Double.Parse(prezzo.Text)
-            };
-
-            using (var db = new AppDbContext())
-            {
-                try
-                {
-                    db.Prodotti.Add(nuovoProdotto);
-                    db.SaveChanges();
-                    lbl_esito_operazione.Text = "Prodotto salvato";
-                } catch (Exception ex)
-                {
-                    lbl_esito_operazione.Text = "Si è vericato un problema";
-                }
-            }
-
-        }
     }
 }

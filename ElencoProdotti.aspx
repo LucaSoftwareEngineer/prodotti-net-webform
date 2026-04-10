@@ -16,7 +16,7 @@
         <br />
         <br />
 
-        <a href="Default.aspx">Aggiungi prodotto</a>
+        <a href="AggiungiProdotto.aspx">Aggiungi prodotto</a>
     </form>
 </body>
 </html>
