@@ -33,6 +33,33 @@ namespace WebForm1App
         protected global::System.Web.UI.WebControls.GridView GridViewProdotti;
 
         /// <summary>
+        /// Controllo IdProdottoDaEliminareInput.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox IdProdottoDaEliminareInput;
+
+        /// <summary>
+        /// Controllo EliminaProdotto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button EliminaProdotto;
+
+        /// <summary>
+        /// Controllo ProdottoDaEliminareNonTrovatoLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProdottoDaEliminareNonTrovatoLabel;
+
+        /// <summary>
         /// Controllo LogoutButton.
         /// </summary>
         /// <remarks>

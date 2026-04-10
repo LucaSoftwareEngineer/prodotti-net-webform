@@ -21,6 +21,14 @@
         <br />
         <br />
 
+        Elimina prodotto con codice:
+        &nbsp; <asp:TextBox ID="IdProdottoDaEliminareInput" runat="server"></asp:TextBox>
+        &nbsp; <asp:Button ID="EliminaProdotto" runat="server" Text="Elimina" OnClick="EliminaProdotto_Click" />
+        <br /> <asp:Label ID="ProdottoDaEliminareNonTrovatoLabel" runat="server" Text="Prodotto non trovato"></asp:Label>
+
+        <br />
+        <br />
+
         <asp:Button ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click" />
 
     </form>
