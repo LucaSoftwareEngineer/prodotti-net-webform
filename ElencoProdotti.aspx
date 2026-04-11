@@ -18,7 +18,14 @@
 
         Elenco prodotti:
         <br />
-        <asp:GridView ID="GridViewProdotti" runat="server" AutoGenerateColumns="true" ></asp:GridView>
+        <asp:GridView ID="GridViewProdotti" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:BoundField DataField="IdProdotto" HeaderText="Codice Prodotto" />
+                <asp:BoundField DataField="Titolo" HeaderText="Titolo" />
+                <asp:BoundField DataField="Prezzo" HeaderText="Prezzo" />
+                <asp:HyperLinkField Text="Modifica" DataNavigateUrlFields="IdProdotto" DataNavigateUrlFormatString="ModificaProdotto.aspx?id={0}" />
+            </Columns>
+        </asp:GridView>
 
         <br />
         <br />
