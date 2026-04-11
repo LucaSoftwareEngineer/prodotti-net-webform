@@ -10,7 +10,6 @@ namespace WebForm1App
 {
     public partial class AggiungiProdotto : System.Web.UI.Page
     {
-        private const string V = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
